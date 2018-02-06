@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="detail_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="percent_change_minus_color">#F44336</color>
+    <color name="percent_change_plus_color">#00E676</color>
+</resources>

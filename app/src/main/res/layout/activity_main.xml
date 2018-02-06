@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <fragment
+        android:id="@+id/main_rows_fragment"
+        android:name="com.example.junyoung.acointicker.MainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="150dp"
+        tools:context="com.example.junyoung.acointicker.MainActivity" />
+
+    <TextView
+        android:id="@+id/coin_price_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/label_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/coin_price_text"
+        android:layout_below="@+id/coin_price_text"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Price" />
+
+    <TextView
+        android:id="@+id/percent_change_24h_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/coin_price_text"
+        android:layout_alignBottom="@+id/coin_price_text"
+        android:layout_alignStart="@+id/coin_price_text"
+        android:layout_marginLeft="300dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/label_text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/percent_change_24h_text"
+        android:layout_below="@+id/percent_change_24h_text"
+        android:fontFamily="sans-serif-condensed"
+        android:text="24 hour price" />
+
+    <TextView
+        android:id="@+id/label_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/last_updated_text"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Last Updated:" />
+
+    <TextView
+        android:id="@+id/last_updated_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="69dp"
+        android:layout_marginStart="4dp"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/coin_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/coin_price_text"
+        android:layout_alignBottom="@+id/coin_price_text"
+        android:layout_marginRight="200dp"
+        android:layout_toStartOf="@+id/coin_price_text" />
+</RelativeLayout>
